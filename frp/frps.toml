@@ -1,0 +1,21 @@
+# ─── frps.toml — 阿里云服务端配置 ────────────────────────────
+# 部署到: <ALIYUN_PUBLIC_IP>:/etc/frp/frps.toml
+# 运行: frps -c /etc/frp/frps.toml
+
+bindPort = 7000
+
+auth.method = "token"
+auth.token = "YOUR_FRP_TOKEN_HERE"
+
+transport.tls.force = true
+
+allowPorts = [
+  { start = 25555, end = 25555 },
+]
+
+# ─── 可选: dashboard ──────────────────────────────────────────
+# 访问 http://<ALIYUN_PUBLIC_IP>:<DASHBOARD_PORT> 查看连接状态
+# webServer.addr = "0.0.0.0"
+# webServer.port = <DASHBOARD_PORT>
+# webServer.user = "admin"
+# webServer.password = "CHANGE_ME_ADMIN"

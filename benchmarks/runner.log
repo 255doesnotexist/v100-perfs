@@ -1,0 +1,172 @@
+
+#############################################
+# Profile 1: 1Cat-vLLM 1.2.0 (multimodal)   #
+#############################################
+=== v120 | agents=1 | max_len=51744 | shared=23285 | turns=35 ===
+Benchmarking http://127.0.0.1:8000 with 1 agent(s), max_model_len=51744
+{
+  "num_agents": 1,
+  "max_model_len": 51744,
+  "compact_threshold": 31046,
+  "turns_per_agent": 35,
+  "total_requests": 35,
+  "wall_time_sec": 1303.8982729529962,
+  "total_throughput_tok_per_sec": 6.735187999069142,
+  "avg_latency_sec": 37.25382721150859,
+  "p95_latency_sec": 42.496134519204496,
+  "avg_ttft_sec": 24.682113364566717,
+  "avg_tok_per_sec": 19.97409800007163,
+  "total_prompt_tokens": 660124,
+  "total_completion_tokens": 8782,
+  "compact_count": 1,
+  "multimodal_count": 7,
+  "approx_cache_hit_rate": 0.99
+}
+
+Summary written to /tmp/agent_bench_results/v120_agents1.json
+Raw results written to /tmp/agent_bench_results/v120_agents1_raw.json
+=== v120 | agents=2 | max_len=51744 | shared=23285 | turns=35 ===
+Benchmarking http://127.0.0.1:8000 with 2 agent(s), max_model_len=51744
+{
+  "num_agents": 2,
+  "max_model_len": 51744,
+  "compact_threshold": 31046,
+  "turns_per_agent": 35,
+  "total_requests": 70,
+  "wall_time_sec": 2203.5622239300283,
+  "total_throughput_tok_per_sec": 7.852285636454729,
+  "avg_latency_sec": 62.515499149928964,
+  "p95_latency_sec": 72.20254157648597,
+  "avg_ttft_sec": 43.68235663777117,
+  "avg_tok_per_sec": 14.765648621028882,
+  "total_prompt_tokens": 1317079,
+  "total_completion_tokens": 17303,
+  "compact_count": 2,
+  "multimodal_count": 13,
+  "approx_cache_hit_rate": 0.99
+}
+
+Summary written to /tmp/agent_bench_results/v120_agents2.json
+Raw results written to /tmp/agent_bench_results/v120_agents2_raw.json
+=== v120 | agents=4 | max_len=51744 | shared=23285 | turns=35 ===
+Benchmarking http://127.0.0.1:8000 with 4 agent(s), max_model_len=51744
+{
+  "num_agents": 4,
+  "max_model_len": 51744,
+  "compact_threshold": 31046,
+  "turns_per_agent": 35,
+  "total_requests": 140,
+  "wall_time_sec": 4396.098785013019,
+  "total_throughput_tok_per_sec": 7.624487446521459,
+  "avg_latency_sec": 97.97172884543751,
+  "p95_latency_sec": 138.0202971363382,
+  "avg_ttft_sec": 73.61520929791857,
+  "avg_tok_per_sec": 12.192435584770433,
+  "total_prompt_tokens": 2632562,
+  "total_completion_tokens": 33518,
+  "compact_count": 4,
+  "multimodal_count": 27,
+  "approx_cache_hit_rate": 0.99
+}
+
+Summary written to /tmp/agent_bench_results/v120_agents4.json
+Raw results written to /tmp/agent_bench_results/v120_agents4_raw.json
+
+#############################################
+# Profile 2: 1Cat-vLLM 1.2.1 (multimodal)   #
+#############################################
+=== v121 | agents=1 | max_len=98784 | shared=44453 | turns=52 ===
+Benchmarking http://127.0.0.1:8000 with 1 agent(s), max_model_len=98784
+{
+  "num_agents": 1,
+  "max_model_len": 98784,
+  "compact_threshold": 59270,
+  "turns_per_agent": 52,
+  "total_requests": 52,
+  "wall_time_sec": 939.7207620139816,
+  "total_throughput_tok_per_sec": 13.347582076529006,
+  "avg_latency_sec": 18.070914810497644,
+  "p95_latency_sec": 41.370949487717006,
+  "avg_ttft_sec": 6.800664764877113,
+  "avg_tok_per_sec": 21.44204087959789,
+  "total_prompt_tokens": 1882688,
+  "total_completion_tokens": 12543,
+  "compact_count": 1,
+  "multimodal_count": 9,
+  "approx_cache_hit_rate": 0.99
+}
+
+Summary written to /tmp/agent_bench_results/v121_agents1.json
+Raw results written to /tmp/agent_bench_results/v121_agents1_raw.json
+=== v121 | agents=2 | max_len=98784 | shared=44453 | turns=52 ===
+Benchmarking http://127.0.0.1:8000 with 2 agent(s), max_model_len=98784
+{
+  "num_agents": 2,
+  "max_model_len": 98784,
+  "compact_threshold": 59270,
+  "turns_per_agent": 52,
+  "total_requests": 104,
+  "wall_time_sec": 1305.2956706259865,
+  "total_throughput_tok_per_sec": 18.797273715182982,
+  "avg_latency_sec": 24.155908573539747,
+  "p95_latency_sec": 29.8201070719806,
+  "avg_ttft_sec": 9.40588713618994,
+  "avg_tok_per_sec": 16.284109403023688,
+  "total_prompt_tokens": 3756116,
+  "total_completion_tokens": 24536,
+  "compact_count": 2,
+  "multimodal_count": 20,
+  "approx_cache_hit_rate": 0.99
+}
+
+Summary written to /tmp/agent_bench_results/v121_agents2.json
+Raw results written to /tmp/agent_bench_results/v121_agents2_raw.json
+=== v121 | agents=4 | max_len=98784 | shared=44453 | turns=52 ===
+Benchmarking http://127.0.0.1:8000 with 4 agent(s), max_model_len=98784
+{
+  "num_agents": 4,
+  "max_model_len": 98784,
+  "compact_threshold": 59270,
+  "turns_per_agent": 52,
+  "total_requests": 208,
+  "wall_time_sec": 4788.962119189033,
+  "total_throughput_tok_per_sec": 10.220586169156952,
+  "avg_latency_sec": 66.96611473226277,
+  "p95_latency_sec": 166.43663699953177,
+  "avg_ttft_sec": 45.15111270918267,
+  "avg_tok_per_sec": 13.664513493143955,
+  "total_prompt_tokens": 7514464,
+  "total_completion_tokens": 48946,
+  "compact_count": 4,
+  "multimodal_count": 40,
+  "approx_cache_hit_rate": 0.99
+}
+
+Summary written to /tmp/agent_bench_results/v121_agents4.json
+Raw results written to /tmp/agent_bench_results/v121_agents4_raw.json
+
+#############################################
+# Profile 3: llama.cpp no-spec + multimodal #
+#############################################
+llama.cpp no-spec failed to start, skipping
+
+All benchmarks complete. Results in /tmp/agent_bench_results
+总计 1260
+drwxr-xr-x.   2 ezra ezra    360  7月 1日 18:40 .
+drwxrwxrwt. 898 root root  30780  7月 1日 18:45 ..
+-rw-r--r--.   1 ezra ezra     69  7月 1日 18:40 llama_nospec.log
+-rw-r--r--.   1 ezra ezra   5319  7月 1日 18:45 runner.log
+-rw-r--r--.   1 ezra ezra    525  7月 1日 14:50 v120_agents1.json
+-rw-r--r--.   1 ezra ezra  10600  7月 1日 14:50 v120_agents1_raw.json
+-rw-r--r--.   1 ezra ezra    528  7月 1日 15:27 v120_agents2.json
+-rw-r--r--.   1 ezra ezra  21148  7月 1日 15:27 v120_agents2_raw.json
+-rw-r--r--.   1 ezra ezra    527  7月 1日 16:40 v120_agents4.json
+-rw-r--r--.   1 ezra ezra  42344  7月 1日 16:40 v120_agents4_raw.json
+-rw-r--r--.   1 ezra ezra 376490  7月 1日 16:40 v120.log
+-rw-r--r--.   1 ezra ezra    527  7月 1日 16:58 v121_agents1.json
+-rw-r--r--.   1 ezra ezra  15772  7月 1日 16:58 v121_agents1_raw.json
+-rw-r--r--.   1 ezra ezra    528  7月 1日 17:20 v121_agents2.json
+-rw-r--r--.   1 ezra ezra  31511  7月 1日 17:20 v121_agents2_raw.json
+-rw-r--r--.   1 ezra ezra    529  7月 1日 18:40 v121_agents4.json
+-rw-r--r--.   1 ezra ezra  63001  7月 1日 18:40 v121_agents4_raw.json
+-rw-r--r--.   1 ezra ezra 678952  7月 1日 18:40 v121.log

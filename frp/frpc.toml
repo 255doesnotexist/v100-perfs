@@ -1,0 +1,18 @@
+# ─── frpc.toml — 本机客户端配置 ───────────────────────────────
+# 运行: frpc -c ./frp/frpc.toml
+# 或通过 start_frpc.sh 在 tmux 中启动
+
+serverAddr = "<TAILSCALE_IP_FRPS>"
+serverPort = 7000
+
+auth.method = "token"
+auth.token = "YOUR_FRP_TOKEN_HERE"
+
+transport.tls.enable = true
+
+[[proxies]]
+name = "llama-proxy"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8000
+remotePort = 25555

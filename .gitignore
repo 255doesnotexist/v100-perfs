@@ -1,0 +1,13 @@
+models/
+*.gguf
+*.safetensors
+__pycache__/
+*.pyc
+.venv*/
+llama.cpp/
+llama.cpp-turboquant/
+ik_llama.cpp/
+exllamav3/
+1Cat-vLLM/
+1Cat-vLLM-1.2.0/
+server/

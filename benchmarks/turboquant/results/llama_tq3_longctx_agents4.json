@@ -1,0 +1,114 @@
+{
+  "num_agents": 4,
+  "max_model_len": 131072,
+  "compact_threshold": 78643,
+  "turns_per_agent": 40,
+  "warmup_turns": 1,
+  "total_requests": 160,
+  "warmup_requests": 4,
+  "steady_state_requests": 156,
+  "wall_time_sec": 2207.50741093501,
+  "total_throughput_tok_per_sec": 18.554864095632194,
+  "all_requests": {
+    "latency_sec": {
+      "avg": 40.8716147246847,
+      "p50": 39.79581662101555,
+      "p95": 62.199992739618764,
+      "p99": 67.22037221611302,
+      "min": 23.20888271497097,
+      "max": 67.2627340189647
+    },
+    "ttft_sec": {
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "decode_tok_per_sec": {
+      "avg": 7.210527575818029,
+      "p50": 6.568029906061939,
+      "p95": 10.847555962269777,
+      "p99": 10.982053275347521,
+      "min": 3.8059707761480666,
+      "max": 11.030259540881143
+    },
+    "e2e_tok_per_sec": {
+      "avg": 7.210527575818029,
+      "p50": 6.568029906061939,
+      "p95": 10.847555962269777,
+      "p99": 10.982053275347521,
+      "min": 3.8059707761480666,
+      "max": 11.030259540881143
+    }
+  },
+  "steady_state": {
+    "latency_sec": {
+      "avg": 41.03779777436881,
+      "p50": 40.014027668512426,
+      "p95": 62.37159061001148,
+      "p99": 67.22225226051233,
+      "min": 23.328863580012694,
+      "max": 67.2627340189647
+    },
+    "ttft_sec": {
+      "avg": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "decode_tok_per_sec": {
+      "avg": 7.182150758604236,
+      "p50": 6.5413092306674,
+      "p95": 10.818857363705723,
+      "p99": 10.937881206323695,
+      "min": 3.8059707761480666,
+      "max": 10.973530670363699
+    },
+    "e2e_tok_per_sec": {
+      "avg": 7.182150758604236,
+      "p50": 6.5413092306674,
+      "p95": 10.818857363705723,
+      "p99": 10.937881206323695,
+      "min": 3.8059707761480666,
+      "max": 10.973530670363699
+    },
+    "total_completion_tokens": 39936,
+    "total_throughput_tok_per_sec": 18.554864095632198
+  },
+  "total_prompt_tokens": 6833952,
+  "total_completion_tokens": 40960,
+  "compact_count": 0,
+  "multimodal_count": 32,
+  "approx_cache_hit_rate": 0.99,
+  "environment": {
+    "timestamp": "2026-07-02T02:05:32+0800",
+    "platform": "linux",
+    "pytorch_version": "2.10.0+cu128",
+    "pytorch_cuda_version": "12.8",
+    "cuda_available": true,
+    "gpu_name": "Tesla V100-PCIE-32GB",
+    "gpu_compute_capability": "7.0",
+    "gpu_total_memory_mb": 32494,
+    "nvidia_smi": {
+      "name": "Tesla V100-PCIE-32GB",
+      "driver_version": "580.159.04",
+      "memory_total_mb": 32768,
+      "compute_capability": "7.0"
+    }
+  },
+  "benchmark_config": {
+    "endpoint": "http://127.0.0.1:8000",
+    "model": "qwen3.6-27b-awq",
+    "num_agents": 4,
+    "max_model_len": 131072,
+    "shared_prefix_tokens": 58982,
+    "turns_per_agent": 40,
+    "max_tokens": 256,
+    "compact_ratio": 0.6,
+    "warmup_turns": 1
+  }
+}

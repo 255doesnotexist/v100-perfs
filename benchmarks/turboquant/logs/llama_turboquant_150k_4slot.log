@@ -1,0 +1,48 @@
+0.00.007.885 I log_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.007.888 I device_info:
+0.00.104.620 I   - CUDA0   : Tesla V100-PCIE-32GB (32494 MiB, 32172 MiB free)
+0.00.104.633 I   - CPU     : 12th Gen Intel(R) Core(TM) i3-12100 (63592 MiB, 63592 MiB free)
+0.00.104.731 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CUDA : ARCHS = 700 | USE_GRAPHS = 1 | PEER_MAX_BATCH_SIZE = 128 | FA_ALL_QUANTS = 1 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.104.832 I srv          init: using 8 threads for HTTP server
+0.00.105.075 I srv         start: binding port with default address family
+0.00.106.298 I srv  llama_server: loading model
+0.00.106.320 I srv    load_model: loading model './models/Qwen3.6-27B-GGUF/Qwen3.6-27B-Q3_K_M.gguf'
+0.00.555.747 I srv    load_model: [mtmd] estimated worst-case memory usage of mmproj is 1161.02 MiB
+0.00.555.767 I common_init_result: fitting params to device memory ...
+0.00.555.768 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.01.327.971 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 99, abort
+0.04.192.031 W llama_context: n_ctx_seq (153600) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.04.193.729 W llama_kv_cache: auto-asymmetric: GQA ratio 6:1 (n_head=24, n_head_kv=4) — upgrading K from turbo3 to q8_0 to prevent quality degradation. Disable with TURBO_AUTO_ASYMMETRIC=0
+0.04.263.529 I common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+0.04.347.141 W load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+0.04.347.144 W load_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+0.04.347.144 W load_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+0.04.697.704 I srv    load_model: loaded multimodal model, './models/Qwen3.6-27B-DFlash-GGUF/mmproj-BF16.gguf'
+0.04.697.716 I srv    load_model: initializing slots, n_slots = 4
+0.04.776.499 W srv    load_model: speculative decoding will use checkpoints
+0.04.776.515 W common_speculative_init: no implementations specified for speculative decoding
+0.04.776.517 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 153600
+0.04.776.536 I slot   load_model: id  1 | task -1 | new slot, n_ctx = 153600
+0.04.776.537 I slot   load_model: id  2 | task -1 | new slot, n_ctx = 153600
+0.04.776.537 I slot   load_model: id  3 | task -1 | new slot, n_ctx = 153600
+0.04.776.581 I srv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+0.04.776.581 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.04.776.582 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+0.04.776.597 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.04.794.085 I init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+<think>
+'
+0.04.806.021 I srv          init: init: chat template, thinking = 1
+0.04.806.063 I srv  llama_server: model loaded
+0.04.806.068 I srv  llama_server: server is listening on http://0.0.0.0:8000
+0.04.806.077 I srv  update_slots: all slots are idle
+2.15.306.999 I srv    operator(): operator(): cleaning up before exit...

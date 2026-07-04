@@ -1,0 +1,20 @@
+0.00.008.773 I log_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.008.776 I device_info:
+0.00.093.104 I   - CUDA0   : Tesla V100-PCIE-32GB (32494 MiB, 32172 MiB free)
+0.00.093.115 I   - CPU     : 12th Gen Intel(R) Core(TM) i3-12100 (63592 MiB, 63592 MiB free)
+0.00.093.204 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | CUDA : ARCHS = 700 | USE_GRAPHS = 1 | PEER_MAX_BATCH_SIZE = 128 | FA_ALL_QUANTS = 1 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.00.093.298 I srv          init: using 7 threads for HTTP server
+0.00.093.546 I srv         start: binding port with default address family
+0.00.095.010 I srv  llama_server: loading model
+0.00.095.020 I srv    load_model: loading model './models/Qwen3.6-27B-GGUF/Qwen3.6-27B-Q3_K_M.gguf'
+0.00.539.849 I srv    load_model: [mtmd] estimated worst-case memory usage of mmproj is 1161.02 MiB
+0.00.539.869 I common_init_result: fitting params to device memory ...
+0.00.539.870 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.01.301.722 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 99, abort
+0.04.065.754 W llama_kv_cache: auto-asymmetric: GQA ratio 6:1 (n_head=24, n_head_kv=4) — upgrading K from turbo3 to q8_0 to prevent quality degradation. Disable with TURBO_AUTO_ASYMMETRIC=0
+0.04.096.802 E ggml_backend_cuda_buffer_type_alloc_buffer: allocating 3396.65 MiB on device 0: cudaMalloc failed: out of memory
+0.04.096.807 E ggml_gallocr_reserve_n_impl: failed to allocate CUDA0 buffer of size 3561644672
+0.04.096.807 E graph_reserve: failed to allocate compute buffers
+0.04.115.584 E llama_init_from_model: failed to initialize the context: failed to allocate compute pp buffers
+0.04.115.591 E common_init_result: failed to create context with model './models/Qwen3.6-27B-GGUF/Qwen3.6-27B-Q3_K_M.gguf'
+0.04.115.595 E common_init_from_params: failed to create context with model './models/Qwen3.6-27B-GGUF/Qwen3.6-27B-Q3_K_M.gguf'

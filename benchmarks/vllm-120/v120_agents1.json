@@ -1,0 +1,18 @@
+{
+  "num_agents": 1,
+  "max_model_len": 51744,
+  "compact_threshold": 31046,
+  "turns_per_agent": 35,
+  "total_requests": 35,
+  "wall_time_sec": 1303.8982729529962,
+  "total_throughput_tok_per_sec": 6.735187999069142,
+  "avg_latency_sec": 37.25382721150859,
+  "p95_latency_sec": 42.496134519204496,
+  "avg_ttft_sec": 24.682113364566717,
+  "avg_tok_per_sec": 19.97409800007163,
+  "total_prompt_tokens": 660124,
+  "total_completion_tokens": 8782,
+  "compact_count": 1,
+  "multimodal_count": 7,
+  "approx_cache_hit_rate": 0.99
+}
